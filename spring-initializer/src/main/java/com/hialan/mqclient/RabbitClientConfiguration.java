@@ -26,6 +26,7 @@ public class RabbitClientConfiguration extends AbstractRabbitConfiguration {
 		connectionFactory.setUsername("guest");
 		connectionFactory.setPassword("guest");
 		connectionFactory.setVirtualHost("/");
+		connectionFactory.setChannelCacheSize(4);
 		connectionFactory.setRequestedHeartBeat(180);
 		return connectionFactory;
 	}
